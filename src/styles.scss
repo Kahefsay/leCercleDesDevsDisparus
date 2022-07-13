@@ -1,1 +1,68 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: #e9eaef;
+}
+
+* {
+  font-family: consolas, sans-serif !important;
+}
+
+.container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1280px;
+  padding-left: 32px;
+  padding-right: 16px;
+  width: 90% !important;
+
+  @media only screen and (min-width: 993px) {
+    width: 70% !important;
+  }
+
+  @media only screen and (min-width: 601px) {
+    width: 85% !important;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.img-card-selection {
+  max-height: 200px;
+  max-width: 140px;
+  padding: 16px;
+}
+
+.card-custom {
+  background-color: #e9eaef;
+  box-shadow: none !important;
+  max-height: 260px;
+  
+  .mat-card-title,
+  .mat-card-subtitle,
+  .mat-card-content {
+    color: #1e1e47 !important;
+    max-height: 176px;
+    p {
+      display: -webkit-box;
+      -webkit-line-clamp: 7;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: justify;
+      height: 140px;
+      max-height: 140px;
+    }
+  }
+}

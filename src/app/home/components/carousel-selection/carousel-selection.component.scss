@@ -1,0 +1,20 @@
+carousel {
+  height: 270px !important;
+  max-height: 270px !important;
+  width: inherit;
+}
+
+::ng-deep .carousel {
+  .carousel-dot {
+    border: 1px solid #1e1e47 !important;
+  }
+
+  .carousel-dot-active {
+    background-color: #1e1e47 !important;
+  }
+
+  .carousel-arrow {
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+}

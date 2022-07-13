@@ -1,0 +1,28 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar {
+  background: #e9eaef;
+  color: #1e1e47;
+  margin-top: 15px;
+  margin-bottom: 25px;
+
+  .mat-toolbar-row.primary-row {
+    align-items: baseline;
+  }
+
+  .mat-toolbar-row.secondary-row {
+    align-items: center;
+
+    mat-nav-list.list-horizontal {
+      padding: 0;
+      .mat-list-item {
+        display: inline-block;
+        height: auto;
+        width: auto;
+        color: #1e1e47;
+      }
+    }
+  }
+}

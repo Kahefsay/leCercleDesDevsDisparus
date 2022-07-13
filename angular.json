@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -92,6 +93,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -123,6 +125,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "leCercleDesDevsDisparus"
+    }
+  },
+  "defaultProject": "leCercleDesDevsDisparus",
+  "cli": {
+    "analytics": "3b2f84da-623a-43e0-a0c4-a7032762c9aa"
+  }
 }
