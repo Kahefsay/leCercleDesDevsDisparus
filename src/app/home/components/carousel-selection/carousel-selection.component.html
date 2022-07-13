@@ -2,55 +2,45 @@
     <carousel [cellWidth]="'100%'" [arrowsOutside]="false" [dots]="true" [objectFit]="'cover'" [autoplay]="false" [loop]="true">
         <div class="carousel-cell row">
             <div style="display: flex; justify-content: center; width: 20%;">
-                <img class="img-card-selection" src="../assets/img/article.jpg">
+                <img class="img-card-selection" src="{{movieOTM.poster}}">
             </div>
             <mat-card class="card-custom card-selection" style="width: 75%">
                 <mat-card-title>
-                    Vers la feminisation ? pour comprendre l'arrivee des femmes au pouvoir
+                  {{movieOTM.title}}
                 </mat-card-title>
                 <mat-card-subtitle>
-                    Alain Soral
+                  {{movieOTM.runtime}}min
                 </mat-card-subtitle>
                 <mat-card-content>
                     <p style="margin-bottom: 16px;">
-                        "La femme est l'avenir de l'homme..." Cette citation devenue célèbre résume à elle seule le
-                        credo de
-                        l'époque, son idéologie. Que le poète qui a écrit cette sentence ait vécu en stalinien et fini
-                        pédé
-                        devrait pourtant inciter à la prudence, voire à la réflexion. Publié en 1999, Vers la
-                        féminisation ?
-                        était
-                        un livre prémonitoire, notamment avec la possible élection d'une femme à la présidence de la
-                        République,
-                        autre signe fort d'une société qui change. Mais change-t-elle en mieux ? Alain Soral nous
-                        démontre que
-                        c'est au contraire parce que la femme est plutôt l'être du désintérêt politique (littéralement
-                        un homme
-                        sans vision collective d'avenir) que l'oligarchie a choisi d'en faire le relais privilégié de
-                        son
-                        pouvoir
-                        (au commentaire journalistique comme à l'exécution de gestion). La féminisation des esprits
-                        complétant
-                        en
-                        quelque sorte la "maastrichtisation" des institutions afin de réduire, jusque dans les
-                        consciences,
-                        l'aspiration du peuple au pouvoir citoyen. En proférant cette thèse radicale (médiatiquement
-                        marginale
-                        mais ressentie par une part grandissante de la population), Vers la féminisation ? veut poser
-                        les bases
-                        d'un débat sérieux à propos d'une manipulation anti-démocratique (notamment la parité) dont la
-                        majorité
-                        des femmes (ouvrières et employées) sont aussi le jouet; mais aussi aider l'honnête homme à se
-                        défendre
-                        contre l'arrogance et la bêtise des élites dirigeantes dans les dîners en ville !
+                      {{movieOTM.description}}
                     </p>
                     <div style="display: flex; flex-direction: row; justify-content: flex-end; z-index: 9999">
-                        <a mat-raised-button href="https://www.google.com/" target="_blank">En savoir plus</a>
                     </div>
                 </mat-card-content>
             </mat-card>
         </div>
-        <div class="carousel-cell">2</div>
+        <div class="carousel-cell row">
+          <div style="display: flex; justify-content: center; width: 20%;">
+            <img class="img-card-selection" src="{{bookOTM.image}}">
+          </div>
+          <mat-card class="card-custom card-selection" style="width: 75%">
+            <mat-card-title>
+              {{bookOTM.title}}
+            </mat-card-title>
+            <mat-card-subtitle>
+              {{bookOTM.author}}min
+            </mat-card-subtitle>
+            <mat-card-content>
+              <p style="margin-bottom: 16px;">
+                {{bookOTM.description}}
+              </p>
+              <div style="display: flex; flex-direction: row; justify-content: flex-end; z-index: 9999">
+                <a mat-raised-button href="{{bookOTM.link}}}" target="_blank">En savoir plus</a>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </div>
         <div class="carousel-cell">3</div>
         <div class="carousel-cell">4</div>
         <div class="carousel-cell">5</div>

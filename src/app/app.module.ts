@@ -10,6 +10,7 @@ import { FooterComponent } from './core/components/footer/footer.component';
 import { TextTitleComponent } from './core/components/text-title/text-title.component';
 import { HomeComponent } from './home/home.component';
 import { CarouselSelectionComponent } from './home/components/carousel-selection/carousel-selection.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CarouselSelectionComponent } from './home/components/carousel-selection
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
   exports: [
     MaterialModule

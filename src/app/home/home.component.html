@@ -5,9 +5,12 @@
 
 <app-text-title title="LES DERNIERES CRITIQUES"></app-text-title>
 
+<p *ngFor="let review of reviews">
+  {{review.author}} ({{review.note}}/5) : {{review.description}} / <span *ngIf="review.book" style="font-style: italic">{{review.book.title}}</span> <span *ngIf="review.movie" style="font-style: italic">{{review.movie.title}}</span>
+</p>
 
 
-<!-- 
+<!--
         <div style="display: flex; justify-content: center; width: 20%;">
         <img class="img-card-selection" src="../assets/img/article.jpg">
     </div>
