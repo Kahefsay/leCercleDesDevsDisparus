@@ -11,6 +11,6 @@ export class ReviewService {
   constructor(private http: HttpClient) { }
 
   getLastFiveReviews(): Observable<Review[]> {
-    return this.http.get<Review[]>('https://cercledesdevsdisparus.herokuapp.com//reviews/lastFive');
+    return this.http.get<Review[]>('https://cercledesdevsdisparus.herokuapp.com/reviews/lastFive');
   }
 }

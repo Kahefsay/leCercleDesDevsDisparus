@@ -11,6 +11,6 @@ export class MovieService {
   constructor(private http: HttpClient) { }
 
   getMovieOTM(): Observable<Movie> {
-    return this.http.get<Movie>('https://cercledesdevsdisparus.herokuapp.com//movies/current');
+    return this.http.get<Movie>('https://cercledesdevsdisparus.herokuapp.com/movies/current');
   }
 }
