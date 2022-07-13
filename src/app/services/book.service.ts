@@ -11,6 +11,6 @@ export class BookService {
   constructor(private http: HttpClient) { }
 
   getBookOTM(): Observable<Book> {
-    return this.http.get<Book>('https://cerclepoetesdisparus.herokuapp.com/books/current');
+    return this.http.get<Book>('https://cercledesdevsdisparus.herokuapp.com//books/current');
   }
 }
