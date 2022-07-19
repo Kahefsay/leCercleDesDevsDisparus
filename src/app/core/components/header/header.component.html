@@ -1,21 +1,33 @@
 <nav>
-    <mat-toolbar>
-        <mat-toolbar-row class="container primary-row">
-            <span style="padding-left: 16px;">LE CERCLE DES DEVS DISPARUS</span>
-            <div class="spacer"></div>
-            <mat-form-field floatLabel="never" [style.width.px]=270>
-                <input type="text" matInput placeholder="Rechercher">
-            </mat-form-field>
-        </mat-toolbar-row>
+  <mat-toolbar>
+    <mat-toolbar-row class="container primary-row">
+      <a routerLink="" routerLinkActive="true" aria-current="page" style="text-decoration: none; color: black">
+        <span style="padding-left: 16px;">LE CERCLE DES DEVS DISPARUS</span>
+      </a>
+      <div class="spacer"></div>
+      <mat-form-field floatLabel="never" [style.width.px]=270>
+        <input type="text" matInput placeholder="Rechercher">
+      </mat-form-field>
+    </mat-toolbar-row>
 
-        <mat-toolbar-row class="container secondary-row">
-            <mat-nav-list class="list-horizontal">
-                <mat-list-item> LIVRES </mat-list-item>
-                <mat-list-item> FILMS </mat-list-item>
-                <mat-list-item> SÉRIES </mat-list-item>
-                <mat-list-item> JEUX </mat-list-item>
-                <mat-list-item> MUSIQUE </mat-list-item>
-            </mat-nav-list>
-        </mat-toolbar-row>
-    </mat-toolbar>
+    <mat-toolbar-row class="container secondary-row">
+      <mat-nav-list class="list-horizontal">
+        <mat-list-item>
+          <a routerLink="/lists-component/books" routerLinkActive="true" aria-current="page"> LIVRES </a>
+        </mat-list-item>
+        <mat-list-item>
+          <a routerLink="/lists-component/movies" routerLinkActive="true" aria-current="page"> FILMS </a>
+        </mat-list-item>
+        <mat-list-item>
+          <a routerLink="/lists-component/tvshows" routerLinkActive="true" aria-current="page"> SÉRIES </a>
+        </mat-list-item>
+        <mat-list-item>
+          <a routerLink="/lists-component/games" routerLinkActive="true" aria-current="page"> JEUX </a>
+        </mat-list-item>
+        <mat-list-item>
+          <a routerLink="/lists-component/songs" routerLinkActive="true" aria-current="page"> MUSIQUE </a>
+        </mat-list-item>
+      </mat-nav-list>
+    </mat-toolbar-row>
+  </mat-toolbar>
 </nav>

@@ -13,4 +13,8 @@ export class MovieService {
   getMovieOTM(): Observable<Movie> {
     return this.http.get<Movie>('https://cercledesdevsdisparus.herokuapp.com/movies/current');
   }
+
+  getAllMovies(): Observable<Movie[]> {
+    return this.http.get<Movie[]>('https://cercledesdevsdisparus.herokuapp.com/movies/all');
+  }
 }

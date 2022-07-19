@@ -1,15 +1,15 @@
 import {Review} from './review';
 
-export interface Book {
+export interface Book{
   _id: string;
   title: string;
   description: string;
+  image: string;
+  current: boolean;
+  reviews: Review[];
   author: string;
   categories: string;
   pages: string;
-  image: string;
   link: string;
-  current: boolean;
   read: boolean;
-  review: Review[];
 }

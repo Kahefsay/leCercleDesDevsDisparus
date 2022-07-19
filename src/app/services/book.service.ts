@@ -13,4 +13,8 @@ export class BookService {
   getBookOTM(): Observable<Book> {
     return this.http.get<Book>('https://cercledesdevsdisparus.herokuapp.com/books/current');
   }
+
+  getAllBooks(): Observable<Book[]>{
+    return this.http.get<Book[]>('https://cercledesdevsdisparus.herokuapp.com/books/all');
+  }
 }

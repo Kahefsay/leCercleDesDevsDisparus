@@ -1,0 +1,30 @@
+<mat-grid-list cols="3">
+  <div *ngIf="movieList">
+    <mat-grid-tile *ngFor="let movie of movieList">
+      <mat-card class="example-card">
+        <mat-card-title-group>
+          <mat-card-title>{{movie.title}}</mat-card-title>
+          <img mat-card-xl-image src="{{movie.image}}" >
+        </mat-card-title-group>
+        <mat-card-content>
+          {{movie.description | slice:0:250}}...
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </div>
+
+  <div *ngIf="bookList">
+    <mat-grid-tile *ngFor="let book of bookList">
+      <mat-card class="example-card">
+        <mat-card-title-group>
+          <mat-card-title>{{book.title}}</mat-card-title>
+          <mat-card-subtitle>{{book.author}}</mat-card-subtitle>
+          <img mat-card-xl-image src="{{book.image}}" >
+        </mat-card-title-group>
+        <mat-card-content>
+          {{book.description | slice:0:250}}...
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </div>
+</mat-grid-list>
